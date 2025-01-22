@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  gap: 4rem;
+  width: 109.2rem;
+  height: 85rem;
+  border-radius: 2rem;
+  border: 2px solid rgba(10, 13, 23, 0.05);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(190px);
+  padding: 3rem 2.2rem 3.3rem 3.5rem;
+  margin: 15.6rem 12% 9.1rem;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  width: 100%;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  width: 100%;
+}
+.label {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.16px;
+}
+.input {
+  display: flex;
+  width: 100%;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(141, 159, 184, 0.6);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+}

@@ -1,0 +1,57 @@
+.page-title {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 11.2rem;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5rem;
+  margin: 22.8rem 6.8% 6.6rem;
+}
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 6.6rem;
+}
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15.7rem;
+  height: 4.4rem;
+  border-radius: 0.9rem;
+  background: #00ffae;
+  color: rgba(0, 0, 0, 0.67);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+@media (max-width: 56.25rem) {
+  .page-title {
+    font-size: 3.6rem;
+    margin-top: 13.4rem;
+  }
+  .testimonials {
+    grid-template-columns: auto;
+    gap: 2.2rem;
+    margin: 7.1rem 5% 4rem;
+  }
+  .button-wrapper {
+    margin: 0 auto 5rem;
+  }
+  .load-more {
+    width: 13.1rem;
+    height: 3.43rem;
+    border-radius: 0.62rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}

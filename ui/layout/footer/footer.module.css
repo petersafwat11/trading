@@ -1,0 +1,150 @@
+.footer {
+  background: #010b13;
+  padding-top: 11.4rem;
+}
+.container {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  gap: 9.4%;
+  margin-bottom: 2.7rem;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 27%;
+}
+.text {
+  color: #c0c0c0;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 160%;
+}
+.social {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.social * {
+  cursor: pointer;
+}
+
+.second {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+.menu-header {
+  color: #d5d9db;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.menu-item,
+.social-item {
+  color: #767676;
+  font-size: 1.8rem;
+  font-weight: 400;
+  list-style-type: none;
+}
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.copyright {
+  width: 82%;
+  /* border: 1px soild white; */
+  border-top: 1px solid white;
+  padding: 4.2rem 0 1.9rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright-text {
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+@media (max-width: 56.25rem) {
+  .footer {
+    padding-top: 0;
+    padding: 5.8rem 1.9rem 2.9rem;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    gap: 4.8rem;
+    flex-direction: column;
+    margin-bottom: 3.6rem;
+  }
+
+  .first {
+    display: flex;
+    flex-direction: column;
+    gap: 2.34rem;
+    width: 100%;
+    align-items: center;
+  }
+
+}
+@media (max-width: 35rem) {
+  /* .container {
+    display: flex;
+    width: 100%;
+    gap: 4.8rem;
+    flex-direction: column;
+    margin-bottom: 3.6rem;
+  } */
+  .first {
+    /* display: flex;
+    flex-direction: column;
+    gap: 2.34rem;
+    width: 100%; */
+    align-items: flex-start;
+  }
+  .text {
+    color: #c0c0c0;
+  }
+  .social {
+    gap: 1.4rem;
+  }
+  .social * {
+    cursor: pointer;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .menu-header {
+    margin-bottom: 0.8rem;
+  }
+  .menu-item,
+  .social-item {
+    font-size: 1.8rem;
+  }
+  .copyright {
+    width: 82%;
+    border-top: 1px solid white;
+    padding: 4.2rem 0 1.9rem;
+    margin: 0 auto;
+  }
+}

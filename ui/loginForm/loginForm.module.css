@@ -1,0 +1,123 @@
+.form {
+  /* width: 566px;
+  height: 508px; */
+  border-radius: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0px 0px 43.9px 0px rgba(0, 255, 174, 0.14);
+  backdrop-filter: blur(190px);
+  padding: 4.1rem 3.55rem;
+  width: 56.6rem;
+  position: relative;
+}
+.green-ball {
+  width: 128.463px;
+  height: 128.463px;
+  border-radius: 100%;
+  position: absolute;
+  top: -64px;
+  left: -79px;
+  /* z-index: 1; */
+  /* transform: rotate(-0.143deg); */
+  background: radial-gradient(
+    79.98% 79.98% at 74.58% 16.62%,
+    #00ffae 0%,
+    #40ffc2 29.89%,
+    #0dd898 73.63%,
+    #07a271 100%
+  );
+}
+.green-ball-2 {
+  width: 3.87rem;
+  height: 3.78rem;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 63px;
+  right: -30px;
+  /* z-index: 1; */
+  /* transform: rotate(-0.143deg); */
+  background: radial-gradient(
+    79.98% 79.98% at 74.58% 16.62%,
+    #00ffae 0%,
+    #40ffc2 29.89%,
+    #0dd898 73.63%,
+    #07a271 100%
+  );
+}
+.green-ball-3 {
+  width: 458px;
+  height: 205px;
+  flex-shrink: 0;
+  background: rgba(0, 255, 174, 0.28);
+  filter: blur(150px);
+  position: absolute;
+  top: 177px;
+  left: 406px;
+}
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+.title {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 1.4rem 2.8rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 1.8rem;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.label {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.16px;
+}
+.input {
+  display: flex;
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(141, 159, 184, 0.6);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+}
+.forget-password {
+  color: #00ffae;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  margin-bottom: 2.8rem;
+}
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 4.4rem;
+  border-radius: 0.9rem;
+  background: #00ffae;
+  color: rgba(0, 0, 0, 0.67);
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.15px;
+  border: none;
+  cursor: pointer;
+}

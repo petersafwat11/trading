@@ -1,0 +1,75 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 2rem;
+  border-radius: 15.173px;
+  border: 1.012px solid rgba(255, 255, 255, 0.14);
+
+  background: linear-gradient(
+    99deg,
+    rgba(14, 105, 76, 0) -167.31%,
+    rgba(5, 14, 21, 0.34) 95.38%
+  );
+
+  backdrop-filter: blur(42.48396682739258px);
+}
+.quotes {
+  color: rgba(243, 245, 247, 0.25);
+  width: 3.8rem;
+  height: 3.2rem;
+  /* font-size: 1.9rem; */
+}
+.text {
+  color: rgba(141, 159, 184, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.18px;
+  padding-bottom: 3rem;
+}
+.personal-details {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.name {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.title {
+  color: #fff;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 40.6rem) {
+  .testimonial {
+    gap: .95rem;
+    padding: 1.19rem 1.01rem;
+    border-radius: .9rem;
+  }
+  .quotes {
+    width: 2.2rem;
+    height: 1.8rem;
+
+  }
+  .text {
+    font-size: 1.4rem;
+    padding-bottom: 1.2rem;
+  }
+  .personal-details {
+    display: flex;
+    align-items: center;
+    gap: 11.4rem;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+}

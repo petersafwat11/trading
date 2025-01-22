@@ -1,0 +1,124 @@
+.page {
+  width: 86.2%;
+  margin: auto;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55.6rem;
+  justify-content: center;
+  margin: 6.9rem auto 0;
+}
+.description {
+  color: #8d9fb8;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.title {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.green-ball-2 {
+  width: 458px;
+  height: 205px;
+  flex-shrink: 0;
+  background: rgba(0, 255, 174, 0.28);
+  filter: blur(150px);
+  position: absolute;
+  top: 163px;
+  right: -87px;
+}
+
+.green-ball {
+  width: 458px;
+  height: 205px;
+  flex-shrink: 0;
+  background: rgba(0, 255, 174, 0.28);
+  filter: blur(150px);
+  position: absolute;
+  top: 9px;
+  left: -251px;
+}
+.green-ball-3 {
+  width: 458px;
+  height: 205px;
+  flex-shrink: 0;
+  background: rgba(0, 255, 174, 0.28);
+  filter: blur(150px);
+  position: absolute;
+  top: 205;
+  left: -516;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-bottom: 5rem;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.category-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+.title-span {
+  font-weight: 300;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrows {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.arrow-wrapper,
+.clickable-arrow-wrapper {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 50%;
+  border: 1px solid #00ffae;
+  background-color: transparent;
+}
+.clickable-arrow-wrapper {
+  background: #00ffae;
+  border: none;
+}
+.arrow,
+.clickable-arrow {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.clickable-arrow {
+  color: #051419;
+}
+.category-courses {
+  display: flex;
+  align-items: center;
+  gap: 6.2rem;
+}
