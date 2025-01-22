@@ -5,6 +5,10 @@ import PaymentForm from "@/ui/paymentForm/PaymentForm";
 const page = () => {
   return (
     <div>
+      <h1 className={`${manrope.className} ${classes["page-title"]}`}>
+      Payment
+      </h1>
+
       <PaymentForm />
     </div>
   );

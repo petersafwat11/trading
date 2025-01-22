@@ -133,7 +133,16 @@ const PaymentForm = () => {
             </div>
           </div>
         </div>
-        <h3 className={classes["sub-title"]}>Payment Method</h3>
+        <h2 className={`${manrope.className} ${classes["title"]}`}>
+          Payment Method
+        </h2>
+        <p className={classes["choose-text"]}>Choose your payment option:</p>
+        <div className={classes["saved-cards"]}>
+          {[1, 2, 3].map((item, index) => (
+            <div key={index} className={classes["saved-card"]}></div>
+          ))}
+        </div>
+        <button className={classes["pay-button"]}>Pay Now</button>
       </div>
       <div className={classes["second"]}>
         <RightSide data={data} setData={setData} />
