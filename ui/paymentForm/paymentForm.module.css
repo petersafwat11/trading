@@ -15,17 +15,42 @@
   flex-direction: column;
   flex-grow: 1;
 }
+.title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+}
+.form-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
 .row {
   display: flex;
   align-items: center;
   gap: 1.4rem;
   width: 100%;
 }
-.input-group {
+.input-group,
+.number-group,
+.date-group {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
   width: 100%;
+}
+.number-group {
+  flex-basis: 150%;
+}
+.date-group {
+  position: relative;
+}
+.date-icon {
+  position: absolute;
+  top: 54%;
+  right: 1.5rem;
+  cursor: pointer;
 }
 .label {
   color: #fff;

@@ -2,8 +2,9 @@ import React from "react";
 import classes from "./countrySelection.module.css";
 import Image from "next/image";
 import { IoIosArrowDown } from "react-icons/io";
-const countrySelection = () => {
-    const countriesOptions = countryList.map((item) => item.country);
+import { countryList } from "@/app/utils/countries";
+const CountrySelection = () => {
+  const countriesOptions = countryList.map((item) => item.country);
 
   return (
     <div className={classes["selection"]}>
@@ -16,13 +17,11 @@ const countrySelection = () => {
       />
       <div className={classes["country"]}>
         <p className={classes["country"]}>United States</p>
-        <IoIosArrowDown  className={classes['arrow']}/>
+        <IoIosArrowDown className={classes["arrow"]} />
       </div>
-      <div className={classes['options']}>
-
-      </div>
+      <div className={classes["options"]}></div>
     </div>
   );
 };
 
-export default countrySelection;
+export default CountrySelection;
