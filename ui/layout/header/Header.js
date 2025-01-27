@@ -33,12 +33,18 @@ const Header = () => {
         </nav>
 
         <div className={classes["action-btns"]}>
-          <button className={` ${DMSans.className} ${classes["login"]}`}>
+          <Link
+            href={"/login"}
+            className={` ${DMSans.className} ${classes["login"]}`}
+          >
             Login
-          </button>
-          <button className={`${DMSans.className} ${classes["signup"]}`}>
+          </Link>
+          <Link
+            href={"/signup"}
+            className={`${DMSans.className} ${classes["signup"]}`}
+          >
             Sign Up
-          </button>
+          </Link>
         </div>
       </div>
       <div className={classes["mobile"]}>

@@ -14,8 +14,7 @@ const ContactForm = () => {
   const [activeType, setActiveType] = useState("Question");
   return (
     <div className={`${DMSans.className} ${classes["container"]}`}>
-              <span className={classes["green-ball"]}></span>
-
+      <span className={classes["green-ball"]}></span>
       <div className={classes["first"]}>
         <div className={classes["top"]}>
           <h2 className={`${manrope.className} ${classes["title"]}`}>
@@ -59,7 +58,9 @@ const ContactForm = () => {
           </div>
           <div className={classes["row"]}>
             <div className={classes["input-group"]}>
-              <label className={`${inter.className} ${classes["label"]}`}>Email Address</label>
+              <label className={`${inter.className} ${classes["label"]}`}>
+                Email Address
+              </label>
               <input
                 className={classes["input"]}
                 placeholder="Email Address"
@@ -75,14 +76,22 @@ const ContactForm = () => {
           </div>
         </div>
         <div className={classes["contact-type"]}>
-          <p className={`${roboto.className} ${classes["type-text"]}`}>
+          <p
+            onClick={() => {
+              console.log("sssssss clickedc");
+            }}
+            className={`${roboto.className} ${classes["type-text"]}`}
+          >
             Select the appropriate option*
           </p>
-          <div className={`${space_Grotesk.className} ${classes["types"]}`}>
+          <div
+            className={`${space_Grotesk.className} ${classes["types"]}`}
+          >
             {["Question", "Complaint", "Other"].map((item, index) => (
               <button
                 onClick={() => {
                   setActiveType(item);
+                  console.log("active type", activeType);
                 }}
                 key={index}
                 className={
@@ -109,10 +118,10 @@ const ContactForm = () => {
       </div>
       <div className={classes["second"]}>
         <Image
-          className={classes["logo"]}
+          className={classes["contact-image"]}
           width="516"
           height="616"
-          alt="logo"
+          alt="contact-image"
           src="/svg/contact.svg"
         />
       </div>

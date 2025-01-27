@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 79.9rem;
+  position: relative;
+  padding: 10rem 2.2rem 10.26rem;
+  align-items: center;
+  background: url("/svg/landing-page/financial-background.svg");
+}
+.green-ball {
+  width: 458px;
+  height: 205px;
+  background: rgba(0, 255, 174, 0.28);
+  filter: blur(150px);
+  position: absolute;
+  bottom: 36%;
+  left: 31.67%;
+}
+
+.top-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.title {
+  font-size: 5.5rem;
+  font-weight: 400;
+  line-height: 7.2rem;
+}
+.title-span-1 {
+  background: var(
+    --asa,
+    linear-gradient(
+      92deg,
+      #fff 3.42%,
+      rgba(255, 255, 255, 0.93) 56.55%,
+      rgba(255, 255, 255, 0) 111.05%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-span-2 {
+  color: #00ffae;
+  margin-left: 1rem;
+}
+.para {
+  color: #767676;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31.5px; /* 157.5% */
+}
+.course-item {
+  display: flex;
+  width: 33.1rem;
+  height: 23rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 42px 16px;
+  gap: 3.7rem;
+  border-radius: 1rem;
+  border: 3px solid #00ffae;
+  background: var(--assssss, linear-gradient(135deg, #04111b 0%, #04101a 60%));
+  position: relative;
+  z-index: 1;
+  margin-left: 19rem;
+  margin-top: 16.9rem;
+}
+.course-para {
+  color: var(--Color-2sss, #767676);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 22px;
+}
+.read-more {
+  display: flex;
+  justify-content: center;
+  height: 4.235rem;
+  align-items: center;
+  width: 16.4rem;
+  border-radius: 0.9rem;
+  background: #00ffae;
+  border: none;
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.image-1 {
+  position: absolute;
+  left: 1.5%;
+  top: 33.5%;
+}
+.image-2 {
+  position: absolute;
+  top: 44.3%;
+  left: 24.6%;
+}
+.image-3 {
+  position: absolute;
+  top: 44.3%;
+  left: 67.3%;
+}
+.image-4 {
+  position: absolute;
+  top: 33.5%;
+  left: 79.3%;
+}
+.image-5 {
+  position: absolute;
+  top: 33.5%;
+  left: 46.3%;
+}

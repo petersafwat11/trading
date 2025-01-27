@@ -7,7 +7,6 @@
 .xx {
   width: 458px;
   height: 205px;
-  flex-shrink: 0;
   opacity: 0.8;
   background: #00ffae;
   filter: blur(150px);

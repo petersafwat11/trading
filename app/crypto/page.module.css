@@ -22,7 +22,6 @@
 .green-ball-2 {
   width: 458px;
   height: 205px;
-  flex-shrink: 0;
   background: rgba(0, 255, 174, 0.28);
   filter: blur(150px);
   position: absolute;
@@ -33,7 +32,6 @@
 .green-ball {
   width: 458px;
   height: 205px;
-  flex-shrink: 0;
   background: rgba(0, 255, 174, 0.28);
   filter: blur(150px);
   position: absolute;

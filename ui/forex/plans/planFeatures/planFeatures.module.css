@@ -1,0 +1,27 @@
+.row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.circles {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.feature {
+  color: #8d9fb8;
+  font-size: 20px;
+  font-weight: 700;
+}
+.circle,
+.included-circle {
+  min-width: 23px;
+  min-height: 23px;
+  border-radius: 50%;
+}
+.circle {
+  background: transparent;
+  border: 1px solid #8d9fb8;
+}
+.included-circle {
+  background: #00ffae;
+}

@@ -1,0 +1,45 @@
+.container {
+  /* 2.3rem */
+  padding: 4.1rem 0 10.54rem;
+  background: url("/svg/candle-background.svg");
+  margin-top: -1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55.6rem;
+  justify-content: center;
+}
+.description {
+  color: #8d9fb8;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.get-started {
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  height: 4.26rem;
+  width: 14.3rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background: #00ffae;
+  cursor: pointer;
+  border: none;
+}

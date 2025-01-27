@@ -1,0 +1,6 @@
+.container {
+  width: 85.7%;
+  margin: 9rem auto 7.7rem;
+  border-top: 1px solid rgba(141, 159, 184, 0.38);
+  border-bottom: 1px solid rgba(141, 159, 184, 0.38);
+}

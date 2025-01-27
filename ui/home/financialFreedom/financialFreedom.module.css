@@ -1,0 +1,64 @@
+.container {
+  /* financial-background */
+  margin-top: -8.3rem;
+}
+.wrapper {
+  display: flex;
+  padding: 14.1rem 0 0 9.6rem;
+  background: url("/svg/landing-page/financial-background.svg");
+}
+.first {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 7.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.title-span-1 {
+  background: var(
+    --asa,
+    linear-gradient(
+      92deg,
+      #fff 3.42%,
+      rgba(255, 255, 255, 0.93) 56.55%,
+      rgba(255, 255, 255, 0) 111.05%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-span-2 {
+  color: #00ffae;
+  margin-left: 1rem;
+}
+.para {
+  color: #8d9fb8;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 125.715%;
+  margin-bottom: 3.8rem;
+}
+.join-btn {
+  display: flex;
+  width: 19.1rem;
+  height: 5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9px;
+  background: #00ffae;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.second {
+  border-radius: 1rem;
+  padding: 2.2rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background: rgba(217, 217, 217, 0.03);
+}

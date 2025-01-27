@@ -13,7 +13,7 @@ const page = () => {
 
       <div className={classes["top"]}>
         <h1 className={`${manrope.className} ${classes["title"]}`}>
-          BROWSE OUR COURSES
+          Browse Our Courses
         </h1>
         <p className={`${DMSans.className} ${classes["description"]}`}>
           Scout out our catalogue of courses within each package to decide which

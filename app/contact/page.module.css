@@ -1,15 +1,20 @@
+.page {
+  position: relative;
+  margin: 6.9rem auto 0;
+}
 .top {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
   width: 55.6rem;
   justify-content: center;
-  margin: 6.9rem auto 0;
 }
 .description {
   color: #8d9fb8;
   font-size: 20px;
   font-weight: 400;
+  text-align: center;
 }
 .title {
   color: #fff;
@@ -22,7 +27,6 @@
 .green-ball-2 {
   width: 458px;
   height: 205px;
-  flex-shrink: 0;
   background: rgba(0, 255, 174, 0.28);
   filter: blur(150px);
   position: absolute;
@@ -33,10 +37,41 @@
 .green-ball {
   width: 458px;
   height: 205px;
-  flex-shrink: 0;
   background: rgba(0, 255, 174, 0.28);
   filter: blur(150px);
   position: absolute;
   top: 9px;
   left: -251px;
+}
+@media (max-width: 56.25rem) {
+  .page {
+    margin: 13.4rem auto 0;
+  }
+  .top {
+    width: 33rem;
+  }
+  .description {
+    font-size: 1.4rem;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .green-ball-2 {
+    width: 388px;
+    height: 174px;
+    background: rgba(0, 255, 174, 0.28);
+    filter: blur(127.37226867675781px);
+    position: absolute;
+    top: 138.4px;
+    right: -324.2px;
+  }
+  .green-ball {
+    width: 388px;
+    height: 174px;
+    background: rgba(0, 255, 174, 0.28);
+    filter: blur(127.37226867675781px);
+    position: absolute;
+    top: 7px;
+    left: -212px;
+  }
 }

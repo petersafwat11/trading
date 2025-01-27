@@ -1,0 +1,19 @@
+.green-ball-2 {
+  width: 458px;
+  height: 205px;
+  background: rgba(0, 255, 174, 0.28);
+  filter: blur(150px);
+  position: absolute;
+  top: 163px;
+  right: -87px;
+}
+
+.green-ball {
+  width: 458px;
+  height: 205px;
+  background: rgba(0, 255, 174, 0.28);
+  filter: blur(150px);
+  position: absolute;
+  top: 9px;
+  left: -251px;
+}

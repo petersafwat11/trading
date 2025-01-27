@@ -35,6 +35,26 @@
   outline: none;
 }
 @media (max-width: 56.25rem) {
+  .green-ball-2 {
+    width: 388px;
+    height: 174px;
+    background: rgba(0, 255, 174, 0.28);
+    filter: blur(150px);
+    position: absolute;
+    top: 138.4px;
+    right: -324.2px;
+  }
+
+  .green-ball {
+    width: 388px;
+    height: 174px;
+    background: rgba(0, 255, 174, 0.28);
+    filter: blur(150px);
+    position: absolute;
+    top: 7px;
+    left: -212px;
+  }
+
   .page-title {
     font-size: 3.6rem;
     margin-top: 13.4rem;

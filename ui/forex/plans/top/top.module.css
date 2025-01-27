@@ -1,0 +1,89 @@
+.top {
+  display: flex;
+  gap: 14.8rem;
+  padding-top: 7rem;
+  padding-bottom: 4.4rem;
+}
+.first {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.para {
+  color: #8d9fb8;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+.plans {
+  display: flex;
+  gap: 2.8rem;
+}
+.plan,
+.special-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 11px 16px 16px;
+  width: 241px;
+  height: 210px;
+  border-radius: 15px;
+  backdrop-filter: blur(42px);
+}
+.plan {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.special-plan {
+  border: 1px solid #00ffae;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 174, 0.05) 0%,
+    rgba(0, 255, 174, 0.05) 50%,
+    rgba(0, 255, 174, 0.05) 100%
+  );
+}
+.plan-name {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+.plan-price {
+  color: #fff;
+  font-size: 58px;
+  font-weight: 700;
+}
+.price-cents {
+  font-size: 1.4rem;
+}
+.subscribe,
+.special-subscribe {
+  display: flex;
+  width: 209px;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.subscribe {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.special-subscribe {
+  background: linear-gradient(180deg, #00ffae 0%, #00a772 100%);
+}

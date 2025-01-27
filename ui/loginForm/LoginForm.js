@@ -6,22 +6,24 @@ import { manrope, DMSans } from "@/app/fonts";
 const LoginForm = () => {
   const [loginData, setLoginData] = useState({ username: "", password: "" });
   return (
-    <div className={`${DMSans.className} ${classes["form"]}`}>
+    <div className={classes["wrapper"]}>
       <span className={classes["green-ball"]}></span>
       <span className={classes["green-ball-2"]}></span>
       <span className={classes["green-ball-3"]}></span>
 
-      <div className={classes["wrapper"]}>
-        <Image
-          className={classes["mobile-logo"]}
-          src="/svg/login-logo.svg"
-          width="76"
-          height="39"
-          alt="logo"
-        />
-        <h3 className={`${manrope.classes} ${classes["title"]}`}>
-          Members Portal
-        </h3>
+      <div className={`${DMSans.className} ${classes["form"]}`}>
+        <div className={classes["logo-wrapper"]}>
+          <Image
+            className={classes["mobile-logo"]}
+            src="/svg/login-logo.svg"
+            width="76"
+            height="39"
+            alt="logo"
+          />
+          <h3 className={`${manrope.classes} ${classes["title"]}`}>
+            Members Portal
+          </h3>
+        </div>
         <div className={classes["inputs"]}>
           <div className={classes["input-group"]}>
             <label className={classes["label"]}>Username</label>

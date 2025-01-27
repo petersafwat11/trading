@@ -1,6 +1,8 @@
+.wrapper {
+  position: relative;
+}
+
 .form {
-  /* width: 566px;
-  height: 508px; */
   border-radius: 2rem;
   border: 2px solid rgba(255, 255, 255, 0.17);
   background: rgba(255, 255, 255, 0.04);
@@ -9,6 +11,7 @@
   padding: 4.1rem 3.55rem;
   width: 56.6rem;
   position: relative;
+  z-index: 1;
 }
 .green-ball {
   width: 128.463px;
@@ -17,8 +20,6 @@
   position: absolute;
   top: -64px;
   left: -79px;
-  /* z-index: 1; */
-  /* transform: rotate(-0.143deg); */
   background: radial-gradient(
     79.98% 79.98% at 74.58% 16.62%,
     #00ffae 0%,
@@ -29,13 +30,11 @@
 }
 .green-ball-2 {
   width: 3.87rem;
-  height: 3.78rem;
+  height: 3.87rem;
   border-radius: 100%;
   position: absolute;
   bottom: 63px;
   right: -30px;
-  /* z-index: 1; */
-  /* transform: rotate(-0.143deg); */
   background: radial-gradient(
     79.98% 79.98% at 74.58% 16.62%,
     #00ffae 0%,
@@ -47,22 +46,19 @@
 .green-ball-3 {
   width: 458px;
   height: 205px;
-  flex-shrink: 0;
   background: rgba(0, 255, 174, 0.28);
   filter: blur(150px);
   position: absolute;
   top: 177px;
   left: 406px;
 }
-.wrapper {
-  position: relative;
-  z-index: 2;
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .title {
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 4rem;
   font-weight: 700;
   margin: 1.4rem 2.8rem;
@@ -97,12 +93,9 @@
   letter-spacing: -0.15px;
 }
 .forget-password {
-  color: #00ffae;
-  font-family: "DM Sans";
   font-size: 16px;
-  font-style: normal;
+  color: #00ffae;
   font-weight: 600;
-  line-height: normal;
   letter-spacing: -0.16px;
   margin-bottom: 2.8rem;
 }
@@ -120,4 +113,161 @@
   letter-spacing: -0.15px;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 62.5rem) {
+  .wrapper {
+    position: relative;
+    /* width: min(70%, 50rem); */
+    width: 50rem;
+  }
+  .form {
+    border-radius: 1.426rem;
+    border: 1.431px solid rgba(255, 255, 255, 0.17);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 0px 31.397px 0px rgba(0, 255, 174, 0.14);
+    backdrop-filter: blur(135.7px);
+    padding: 2.875rem 2.53rem;
+    width: 100%;
+  }
+  .green-ball {
+    width: 123.625px;
+    height: 123.625px;
+    border-radius: 100%;
+    position: absolute;
+    top: -66.7px;
+    left: -20.125px;
+  }
+  .green-ball-2 {
+    width: 4.4505rem;
+    height: 4.4505rem;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -22.885px;
+    right: -19.32px;
+  }
+  .green-ball-3 {
+    width: 150.65px;
+    height: 244.95px;
+    filter: blur(49.335px);
+    position: absolute;
+    top: 24.15%;
+    left: -125.35px;
+  }
+  .title {
+    color: #fff;
+    font-size: 2.852rem;
+    margin: 1.0005rem 2.024rem;
+  }
+  .inputs {
+    gap: 1.84rem;
+    margin-bottom: 1.334rem;
+  }
+  .input-group {
+    gap: 0.8625rem;
+  }
+  .label {
+    font-size: 1.1385rem;
+    letter-spacing: -0.115px;
+  }
+  .input {
+    padding: 0.8625rem;
+    border-radius: 3.5765px;
+    border: 0.7153px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.0695rem;
+    letter-spacing: -0.10925px;
+  }
+  .forget-password {
+    font-size: 11.4425px;
+    letter-spacing: -0.115px;
+    margin-bottom: 2.0125rem;
+  }
+  .login-btn {
+    height: 3.151rem;
+    border-radius: 0.644rem;
+    font-size: 1.0695rem;
+    letter-spacing: -0.10695px;
+  }
+}
+@media (max-width: 700px) {
+  .logo {
+    width: 47px;
+    height: 24px;
+  }
+  .wrapper {
+    position: relative;
+    width: min(80%, 42rem);
+  }
+  .form {
+    border-radius: 1.24rem;
+    border: 1.244px solid rgba(255, 255, 255, 0.17);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0px 0px 27.302px 0px rgba(0, 255, 174, 0.14);
+    backdrop-filter: blur(118px);
+    padding: 2.5rem 2.2rem;
+    width: 100%;
+  }
+  .green-ball {
+    width: 107.5px;
+    height: 107.5px;
+    border-radius: 100%;
+    position: absolute;
+    top: -58px;
+    left: -17.5px;
+  }
+  .green-ball-2 {
+    width: 3.87rem;
+    height: 3.87rem;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -19.9px;
+    right: -16.8px;
+  }
+  .green-ball-3 {
+    width: 131px;
+    height: 213px;
+    filter: blur(42.9px);
+    position: absolute;
+    top: 21%;
+    left: -109px;
+  }
+  .title {
+    color: #fff;
+    font-size: 2.48rem;
+    margin: 0.87rem 1.76rem;
+  }
+  .inputs {
+    gap: 1.6rem;
+    margin-bottom: 1.16rem;
+  }
+  .input-group {
+    gap: 0.75rem;
+  }
+  .label {
+    font-size: 0.99rem;
+    letter-spacing: -0.1px;
+  }
+  .input {
+    padding: 0.75rem;
+    border-radius: 3.11px;
+    border: 0.622px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.93rem;
+    letter-spacing: -0.095px;
+  }
+  .forget-password {
+    font-size: 9.95px;
+    letter-spacing: -0.1px;
+    margin-bottom: 1.75rem;
+  }
+  .login-btn {
+    height: 2.74rem;
+    border-radius: 0.56rem;
+    font-size: 0.93rem;
+    letter-spacing: -0.093px;
+  }
+}
+@media (max-width: 450px) {
+  .wrapper {
+    position: relative;
+    width: 89.5%;
+  }
 }
