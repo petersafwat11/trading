@@ -53,6 +53,7 @@ const Prophits = () => {
         alt="logo"
         src="/svg/landing-page/prophits-4.svg"
       />
+
       <Image
         className={classes["image-5"]}
         width="267"

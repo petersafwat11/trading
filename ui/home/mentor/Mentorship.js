@@ -23,10 +23,11 @@ const Mentorship = () => {
         </div>
         <div className={classes["second"]}>
           <Image
-            className={classes["logo"]}
+            className={classes["mentor-image"]}
+            layout="responsive"
             width="665"
             height="680"
-            alt="logo"
+            alt="mentor"
             src="/svg/landing-page/mentor.svg"
           />
         </div>

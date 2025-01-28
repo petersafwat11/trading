@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import classes from "./paymentForm.module.css";
 import DateIcon from "./dateIcon";
 import RightSide from "./rightSide/RightSide";
-import CountrySelection from "./countrySelection/CountrySelection";
+import Image from "next/image";
 const PaymentForm = () => {
   const [data, setData] = useState({
     fullName: "",
@@ -70,11 +70,11 @@ const PaymentForm = () => {
             </div>
           </div>
           <div className={classes["row"]}>
-            <div className={classes["input-group"]}>
+            <div className={classes["country-group"]}>
               <label className={classes["label"]}>Country Code*</label>
               <input
                 className={classes["input"]}
-                placeholder="Type Name Here"
+                placeholder="+91"
                 value={data.username}
                 onChange={(e) => {
                   setData({
@@ -106,7 +106,7 @@ const PaymentForm = () => {
               <label className={classes["label"]}>Nationality</label>
               <input
                 className={classes["input"]}
-                placeholder="Type Name Here"
+                placeholder="United States"
                 value={data.username}
                 onChange={(e) => {
                   setData({
@@ -139,7 +139,24 @@ const PaymentForm = () => {
         <p className={classes["choose-text"]}>Choose your payment option:</p>
         <div className={classes["saved-cards"]}>
           {[1, 2, 3].map((item, index) => (
-            <div key={index} className={classes["saved-card"]}></div>
+            <div key={index} className={classes["saved-card"]}>
+              <div className={classes["visa-first"]}>
+                <Image
+                  className={classes["visa-image"]}
+                  width={32}
+                  height={17}
+                  alt="visa logo"
+                  src={"/svg/visa.svg"}
+                />
+                <p className={classes["visa-name"]}>Axim Bank</p>
+              </div>
+              <div className={classes["visa-second"]}>
+                <p className={classes["visa-num"]}>**** **** **** 4578</p>
+                <div className={classes["select-circle"]}>
+                  <span className={classes["selected-circle"]}></span>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
         <button className={classes["pay-button"]}>Pay Now</button>

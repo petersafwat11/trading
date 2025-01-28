@@ -8,7 +8,7 @@
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(190px);
   padding: 3rem 2.2rem 3.3rem 3.5rem;
-  margin: 15.6rem 12% 9.1rem;
+  margin: auto;
 }
 .first {
   display: flex;
@@ -36,14 +36,18 @@
 }
 .input-group,
 .number-group,
-.date-group {
+.date-group,
+.country-group {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
   width: 100%;
 }
 .number-group {
-  flex-basis: 150%;
+  flex: 2;
+}
+.country-group {
+  flex: 1;
 }
 .date-group {
   position: relative;
@@ -102,4 +106,237 @@
   letter-spacing: -0.15px;
   border: none;
   cursor: pointer;
+}
+.saved-card {
+  width: 100%;
+  height: 4.4rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 13px;
+  display: flex;
+  align-items: center;
+  gap: 5.8rem;
+}
+.visa-second,
+.visa-first {
+  display: flex;
+  align-items: center;
+}
+.visa-first {
+  gap: 1rem;
+}
+.visa-second {
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.visa-name,
+.visa-num {
+  color: #8d9fb8;
+  font-size: 14px;
+  font-weight: 400;
+}
+.select-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid#00ffae;
+  padding: 3px;
+}
+.selected-circle {
+  min-width: 14px;
+  min-height: 14px;
+  border-radius: 50%;
+  background: #00ffae;
+}
+@media (max-width: 1200px) {
+  .form {
+    gap: 3.08rem;
+    width: 84.084rem;
+    height: 65.45rem;
+    border-radius: 1.54rem;
+    padding: 2.31rem 1.694rem 2.541rem 2.695rem;
+  }
+  .title {
+    font-size: 2.31rem;
+    letter-spacing: -0.462px;
+  }
+  .form-rows {
+    gap: 1.848rem;
+    margin-top: 19.25px;
+    margin-bottom: 18.48px;
+  }
+  .row {
+    gap: 1.078rem;
+    width: 100%;
+  }
+  .input-group,
+  .number-group,
+  .date-group,
+  .country-group {
+    gap: 0.693rem;
+    width: 100%;
+  }
+  .date-icon {
+    top: 50%;
+    right: 1.155rem;
+  }
+  .label {
+    font-size: 1.232rem;
+    letter-spacing: -0.1232px;
+  }
+  .input {
+    width: 100%;
+    padding: 9.24px 10.78px;
+    border-radius: 3.85px;
+    font-size: 1.155rem;
+    letter-spacing: -0.1155px;
+  }
+  .choose-text {
+    font-size: 12.32px;
+    letter-spacing: -0.1232px;
+    margin-top: 1.001rem;
+  }
+  .saved-cards {
+    gap: 1.54rem;
+    margin-bottom: 1.54rem;
+    margin-top: 0.924rem;
+  }
+  .pay-button {
+    border-radius: 6.93px;
+    height: 3.0492rem;
+    font-size: 1.155rem;
+    font-weight: 500;
+    letter-spacing: -0.1155px;
+  }
+  .saved-card {
+    width: 100%;
+    height: 3.388rem;
+    border-radius: 3.85px;
+    padding: 9.24px 10.01px;
+    gap: 4.466rem;
+  }
+  .visa-first {
+    gap: 0.77rem;
+  }
+  .visa-second {
+    flex-grow: 1;
+  }
+  .visa-name,
+  .visa-num {
+    font-size: 10.78px;
+    font-weight: 400;
+  }
+  .select-circle {
+    width: 15.4px;
+    height: 15.4px;
+    padding: 2.31px;
+  }
+  .selected-circle {
+    min-width: 10.78px;
+    min-height: 10.78px;
+  }
+}
+@media (max-width: 56.25rem) {
+  .form {
+    flex-direction: column;
+    gap: 3.08rem;
+    width: 85%;
+    height: auto;
+    border-radius: 1.54rem;
+    padding: 2.31rem 1.694rem 2.541rem 2.695rem;
+  }
+}
+@media (max-width: 650px) {
+  .form {
+    flex-direction: column;
+    gap: 1.73rem;
+    width: 85%;
+    height: auto;
+    border-radius: 1rem;
+    backdrop-filter: blur(95px);
+    padding: 1.5rem 1.75rem 2.63rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    letter-spacing: -0.3px;
+  }
+  .form-rows {
+    gap: 1.2rem;
+    margin-top: 12px;
+    margin-bottom: 16.9px;
+  }
+  .row {
+    gap: 0.953rem;
+  }
+  .input-group,
+  .number-group,
+  .date-group,
+  .country-group {
+    gap: 0.7rem;
+  }
+  .visa-image {
+    width: 16px;
+    height: 8.5px;
+  }
+  .date-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .label {
+    font-size: 0.8rem;
+    letter-spacing: -0.08px;
+  }
+  .input {
+    padding: 6.017px 7.02px;
+    border-radius: 2.5px;
+    font-size: 0.75rem;
+    letter-spacing: -0.075px;
+  }
+  .choose-text {
+    font-size: 8px;
+    letter-spacing: -0.08px;
+    margin-top: 0.6rem;
+  }
+  .saved-cards {
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.65rem;
+  }
+  .pay-button {
+    border-radius: 4.5px;
+    height: 1.98rem;
+    font-size: 0.75rem;
+    letter-spacing: -0.075px;
+  }
+  .saved-card {
+    width: 100%;
+    height: 2.2rem;
+    border-radius: 2.5px;
+    padding: 6.52px 6px 6px;
+    gap: 2.57rem;
+  }
+  .visa-first {
+    gap: 0.5rem;
+  }
+  .visa-second {
+    flex-grow: 1;
+  }
+  .visa-name,
+  .visa-num {
+    font-size: 7px;
+  }
+  .select-circle {
+    width: 10px;
+    height: 10px;
+    padding: 1.5px;
+  }
+  .selected-circle {
+    min-width: 7px;
+    min-height: 7px;
+  }
 }

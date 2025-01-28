@@ -19,7 +19,7 @@ const Journy = () => {
             </div>
 
             <Image
-              className={classes["logo"]}
+              className={classes["course-image"]}
               width="215"
               height="234"
               alt="logo"

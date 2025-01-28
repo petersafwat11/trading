@@ -50,7 +50,7 @@ const RightSide = ({ data, setData }) => {
             <p className={classes["price"]}>£120.00</p>
           </div>
         </div>
-        <div className={classes["summery-total"]}>
+        <div className={classes["total"]}>
           <p className={classes["name"]}>Total</p>
           <p className={classes["price"]}>£240.00</p>
         </div>

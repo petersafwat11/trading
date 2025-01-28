@@ -1,5 +1,4 @@
 .container {
-  /* financial-background */
   margin-top: -8.3rem;
 }
 .wrapper {
@@ -10,6 +9,7 @@
 .first {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .title {
   font-size: 7.2rem;
@@ -61,4 +61,40 @@
   padding: 2.2rem 0;
   border: 1px solid rgba(255, 255, 255, 0.13);
   background: rgba(217, 217, 217, 0.03);
+}
+@media (max-width: 1250px) {
+  .container {
+    margin-top: -7.055rem;
+  }
+
+  .wrapper {
+    padding: 12rem 0 0 8.16rem;
+  }
+
+  .title {
+    font-size: 6.12rem;
+  }
+
+  .title-span-2 {
+    margin-left: 0.85rem;
+  }
+
+  .para {
+    font-size: 1.7rem;
+    margin-bottom: 3.23rem;
+  }
+
+  .join-btn {
+    width: 16.23rem;
+    height: 4.25rem;
+    border-radius: 7.65px;
+    font-size: 1.36rem;
+  }
+
+  .second {
+    border-radius: 0.85rem;
+    padding: 1.87rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    background: rgba(217, 217, 217, 0.03);
+  }
 }

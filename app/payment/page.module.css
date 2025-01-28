@@ -1,8 +1,17 @@
+.page {
+  margin-bottom: 9.1rem;
+}
 .page-title {
   color: #fff;
   text-align: center;
   font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 9.5rem auto 14.6rem;
+  margin: 0 auto;
+}
+.top {
+  padding-top: 11.3rem;
+  background: url("/svg/candle-background.svg");
+  margin-top: -1.8rem;
+  padding-bottom: 15.6rem;
 }

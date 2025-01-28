@@ -116,3 +116,84 @@
   top: 33.5%;
   left: 46.3%;
 }
+
+@media (max-width: 1250px) {
+  .container {
+    height: 67.915rem;
+    padding: 8.5rem 1.87rem 8.72rem;
+  }
+
+  .green-ball {
+    width: 389.3px;
+    height: 174.25px;
+    background: rgba(0, 255, 174, 0.28);
+    filter: blur(150px);
+    bottom: 30.6%;
+    left: 26.92%;
+  }
+
+  .top-text {
+    gap: 1.19rem;
+  }
+
+  .title {
+    font-size: 4.675rem;
+    line-height: 6.12rem;
+  }
+
+  .title-span-2 {
+    margin-left: 0.85rem;
+  }
+
+  .para {
+    font-size: 17px;
+    line-height: 26.78px;
+  }
+
+  .course-item {
+    width: 28.1rem;
+    height: 19.55rem;
+    padding: 35.7px 13.6px;
+    gap: 3.15rem;
+    border-radius: 0.85rem;
+    margin-left: 16.15rem;
+    margin-top: 14.41rem;
+  }
+
+  .course-para {
+    font-size: 1.7rem;
+    line-height: 18.7px;
+  }
+
+  .read-more {
+    height: 3.6rem;
+    width: 13.94rem;
+    border-radius: 0.765rem;
+    font-size: 1.45rem;
+  }
+
+  .image-1 {
+    width: 251.6px;
+    height: 216.75px;
+  }
+
+  .image-2 {
+    width: 231.2px;
+    height: 234.6px;
+  }
+
+  .image-3 {
+    width: 113.05px;
+    height: 234.6px;
+  }
+
+  .image-4 {
+    width: 230.35px;
+    height: 234.6px;
+  }
+
+  .image-5 {
+    width: 226.95px;
+    height: 234.6px;
+  }
+}
