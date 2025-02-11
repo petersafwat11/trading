@@ -1,6 +1,11 @@
 .page {
   position: relative;
-  margin: 6.9rem auto 0;
+  margin: auto;
+}
+.container {
+  background: url("/svg/candle-background.svg");
+  padding: 7.9rem 0 15.2rem;
+  margin-top: -1rem;
 }
 .top {
   display: flex;
@@ -45,8 +50,14 @@
 }
 @media (max-width: 56.25rem) {
   .page {
-    margin: 13.4rem auto 0;
+    margin: 0 auto;
   }
+  .container {
+    background: url("/svg/candle-mobile.svg") top center;
+    padding: 13.4rem 0 6.5rem;
+    margin-top: -1rem;
+  }
+
   .top {
     width: 33rem;
   }

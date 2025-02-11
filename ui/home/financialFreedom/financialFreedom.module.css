@@ -1,10 +1,10 @@
 .container {
-  margin-top: -8.3rem;
+  margin-top: -7.3rem;
+  background: url("/svg/landing-page/financial-background.svg");
 }
 .wrapper {
   display: flex;
   padding: 14.1rem 0 0 9.6rem;
-  background: url("/svg/landing-page/financial-background.svg");
   gap: 3rem;
 }
 .first {
@@ -63,9 +63,12 @@
   border: 1px solid rgba(255, 255, 255, 0.13);
   background: rgba(217, 217, 217, 0.03);
 }
+.image-mobile {
+  display: none;
+}
 @media (max-width: 1250px) {
   .container {
-    margin-top: -7.055rem;
+    margin-top: -7.3rem;
   }
 
   .wrapper {
@@ -97,5 +100,53 @@
     padding: 1.87rem 0;
     border: 1px solid rgba(255, 255, 255, 0.13);
     background: rgba(217, 217, 217, 0.03);
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    margin-top: -7.055rem;
+  }
+
+  .wrapper {
+    padding: 8.8rem 0 5rem 0;
+    flex-direction: column;
+    width: 91%;
+    margin: 0 auto;
+  }
+  .first {
+    gap: 0.6rem;
+  }
+  .title {
+    font-size: 3.6rem;
+  }
+
+  .title-span-2 {
+    margin-left: 0.7rem;
+  }
+
+  .para {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .join-btn {
+    width: 131px;
+    height: 34.293px;
+    border-radius: 6.2px;
+    font-size: 1.2rem;
+  }
+
+  .second {
+    padding: 0.9rem 1.3rem 0.9rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+  }
+  .image {
+    display: none;
+  }
+  .image-mobile {
+    display: block;
+    height: auto;
+    width: 100%;
   }
 }

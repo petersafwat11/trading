@@ -23,13 +23,13 @@ const page = () => {
       <div className={classes["courses"]}>
         <span className={classes["green-ball-3"]}></span>
 
-        {[1, 2, 3, 4].map((item, index) => (
+        {[1, 2, 3].map((item, index) => (
           <div key={index} className={classes["category"]}>
             <div className={classes["category-top"]}>
               <h3
                 className={`${manrope.className} ${classes["category-title"]}`}
               >
-                STOCKS{" "}
+                {item === 1 ? "STOCKS" : item === 2 ? "FOREX" : "CRYPTO"}
                 <span className={classes["title-span"]}>Investment </span>
               </h3>
               <div className={classes["arrows"]}>
@@ -43,8 +43,8 @@ const page = () => {
               </div>
             </div>
             <div className={classes["category-courses"]}>
-              {[1, 2, 3].map((item, index) => (
-                <CourseCard key={index} />
+              {[1, 2, 3].map((course, index) => (
+                <CourseCard key={index} page={item === 1 ? "stocks" : item === 2 ? "forex" : "crypto"} />
               ))}
             </div>
           </div>

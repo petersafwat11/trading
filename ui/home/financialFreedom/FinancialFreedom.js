@@ -21,12 +21,20 @@ const FinancialFreedom = () => {
         </div>
         <div className={classes["second"]}>
           <Image
-            className={classes["image-5"]}
+            className={classes["image"]}
             width="828"
             height="566"
-            alt="img"
+            alt="freedom"
             src="/svg/landing-page/financial.svg"
           />
+          <Image
+            className={classes["image-mobile"]}
+            width="330"
+            height="226"
+            alt="freedom"
+            src="/svg/landing-page/financial-mobile.svg"
+          />
+          
         </div>
       </div>
     </div>

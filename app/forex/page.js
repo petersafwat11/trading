@@ -9,7 +9,7 @@ const page = () => {
     <div className={classes["page"]}>
       <span className={classes["green-ball"]}></span>
       <span className={classes["green-ball-2"]}></span>
-      <Top />
+      <Top title="Forex Trading" description="Unravel the leading market strategies from professional traders and discover key insights and signals to propel your path to financial freedom!" />
       <BundlePackege />
       <SoloPackage />
       <Plans />

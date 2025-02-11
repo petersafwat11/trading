@@ -40,9 +40,8 @@ const FAQ = () => {
   ];
   return (
     <div className={`${DMSans.className} ${classes["container"]}`}>
-            <span className={classes["green-ball"]}></span>
+      <span className={classes["green-ball"]}></span>
       <span className={classes["green-ball-2"]}></span>
-
 
       <h2 className={`${manrope.className} ${classes["title"]}`}>
         <span className={classes["title-span-1"]}>Frequently Asked</span>

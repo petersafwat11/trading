@@ -1,17 +1,15 @@
 import React from "react";
 import classes from "./top.module.css";
 import { manrope, DMSans } from "@/app/fonts";
-const Top = () => {
+const Top = ({title, description, }) => {
   return (
     <div className={`${DMSans.className} ${classes["container"]}`}>
       <div className={classes["top"]}>
         <h1 className={`${manrope.className} ${classes["title"]}`}>
-          Stocking Investment
+          {title}
         </h1>
         <p className={`${DMSans.className} ${classes["description"]}`}>
-          Unravel the leading market strategies from professional traders and
-          discover key insights and signals to propel your path to financial
-          freedom!
+          {description}
         </p>
       </div>
       <button className={classes["get-started"]}>Get Started</button>

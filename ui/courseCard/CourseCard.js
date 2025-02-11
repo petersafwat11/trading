@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import classes from "./courseCard.module.css";
 import Image from "next/image";
@@ -6,9 +7,14 @@ import { FaArrowRightLong } from "react-icons/fa6";
 <FaArrowRightLong />;
 
 import { manrope, DMSans } from "@/app/fonts";
-const CourseCard = () => {
+import { useRouter } from "next/navigation";
+const CourseCard = ({ page }) => {
+  const router = useRouter();
   return (
-    <div className={`${manrope.className} ${classes["container"]}`}>
+    <div
+      onClick={() => router.push(`/${page}`)}
+      className={`${manrope.className} ${classes["container"]}`}
+    >
       <Image
         className={classes["image"]}
         width="371"

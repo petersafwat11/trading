@@ -86,41 +86,6 @@
   border: none;
 }
 @media (max-width: 1200px) {
-  /* .container {
-    height: auto;
-  }
-
-  .first {
-    gap: 3.08rem;
-    padding-left: 7.7rem;
-    flex-grow: 1;
-  }
-
-  .text-top {
-    gap: 1.08rem;
-    max-width: 42.5rem;
-  }
-
-  .title {
-    font-size: 4.235rem;
-    line-height: 5.544rem;
-  }
-
-  .title-span-2 {
-    margin-left: 0.77rem;
-  }
-
-  .para {
-    font-size: 15.4px;
-    line-height: 96.9%;
-  }
-
-  .join-btn {
-    width: 14.7rem;
-    height: 3.85rem;
-    border-radius: 0.69rem;
-    font-size: 1.23rem;
-  } */
   .container {
     height: auto;
   }
@@ -155,5 +120,45 @@
     height: 4.25rem;
     border-radius: 0.765rem;
     font-size: 1.36rem;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  .first {
+    gap: 2.54rem;
+    padding-left: 0;
+    flex-grow: 1;
+    padding: 8.6rem 2rem 5rem 2.3rem;
+  }
+
+  .text-top {
+    gap: 0.9rem;
+    max-width: 90%;
+  }
+
+  .title {
+    font-size: 3.2rem;
+    line-height: 3.55rem;
+  }
+
+  .title-span-2 {
+    margin-left: 0.7rem;
+  }
+
+  .para {
+    font-size: 14px;
+    line-height: 125%;
+  }
+
+  .join-btn {
+    width: 131px;
+    height: 34.293px;
+    border-radius: 0.62rem;
+    font-size: 1.2rem;
   }
 }

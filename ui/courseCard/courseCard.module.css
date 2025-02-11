@@ -5,6 +5,7 @@
   border: 1px solid #00ffae;
   background: linear-gradient(135deg, #04111b 0%, #04101a 60%);
   padding: 13px 13px 15px;
+  cursor: pointer;
 }
 
 .tag {

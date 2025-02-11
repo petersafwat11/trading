@@ -8,7 +8,7 @@
   display: flex;
   gap: 4.3rem;
   padding: 20px 20px 20px 40px;
-  margin: 15.2rem auto 11rem;
+  margin: 0 auto 11rem;
 }
 .first {
   position: relative;
@@ -151,7 +151,7 @@
     border-radius: 1.6rem;
     gap: 3.44rem;
     padding: 16px 16px 16px 32px;
-    margin: 12.16rem auto 8.8rem;
+    margin: 0 auto 8.8rem;
   }
   .contact-image {
     width: 412px;
@@ -239,7 +239,7 @@
     flex-direction: column;
     gap: 2.2rem;
     padding: 18px 16px 20px;
-    margin: 7.1rem auto 5rem;
+    margin: 0 auto 5rem;
   }
   .contact-image {
     width: 320px;
