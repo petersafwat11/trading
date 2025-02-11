@@ -117,6 +117,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.68rem 2.4rem;
+    position: relative;
+    z-index: 1;
   }
   /* .logo {
     width: 59px;

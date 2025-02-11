@@ -200,7 +200,7 @@
 @media (max-width: 900px) {
   .container {
     height: 53.6rem;
-    padding: 4.7rem 20rem 8.6rem;
+    padding: 4.7rem 0 8.6rem;
   }
 
   .green-ball {
@@ -263,25 +263,38 @@
   .image-1 {
     width: 251.6px;
     height: 216.75px;
+    display: none;
   }
 
   .image-2 {
-    width: 231.2px;
-    height: 234.6px;
+    top: 46.2%;
+    width: 204.195px;
+    height: 207.198px;
+    left: -138px;
+    /* display: none; */
   }
 
   .image-3 {
-    width: 113.05px;
-    height: 234.6px;
+    width: 99.845px;
+    height: 207.198px;
+    top: 46.2%;
+    right: -31px;
+    left: auto;
   }
 
   .image-4 {
-    width: 230.35px;
-    height: 234.6px;
+    width: 99.845px;
+    height: 207.198px;
+    display: none;
+    top: 46.2%;
+    right: -31px;
   }
 
   .image-5 {
-    width: 226.95px;
-    height: 234.6px;
+    top: 34.3%;
+    width: 200.441px;
+    height: 207.198px;
+    left: 24.2%;
+    /* display: none; */
   }
 }
