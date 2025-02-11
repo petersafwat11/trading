@@ -1,3 +1,6 @@
+.page {
+  position: relative;
+}
 .green-ball-2 {
   width: 458px;
   height: 205px;
@@ -16,4 +19,14 @@
   position: absolute;
   top: 9px;
   left: -251px;
+}
+
+.button {
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #00ffae 0%, #00c088 100%);
 }

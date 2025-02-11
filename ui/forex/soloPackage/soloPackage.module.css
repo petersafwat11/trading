@@ -2,30 +2,38 @@
   display: flex;
   flex-direction: column;
   gap: 5.3rem;
-  padding: 3.1rem 10.48% 13rem;
+  padding: 3.1rem 0 13rem;
+  max-width: 80%;
+  margin: 0 auto;
 }
+
 .title {
   color: #fff;
   font-size: 4rem;
   text-transform: uppercase;
+  text-align: center;
 }
+
 .title-span-1 {
   font-weight: 800;
 }
+
 .title-span-2 {
   font-weight: 400;
-  margin-left: 1rem;
+  margin-left: clamp(0.7rem, 1vw, 1rem);
 }
+
 .packages {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2.5rem 2.6rem;
+  width: 100%;
 }
+
 .package {
   display: flex;
-  width: 53.8rem;
-  height: 24.4rem;
-  padding: 11px 19px;
+  min-height: 24.4rem;
+  padding: clamp(1.2rem, 2vw, 2rem);
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
@@ -35,40 +43,53 @@
     rgba(14, 105, 76, 0) -167.31%,
     #050e15 95.38%
   );
-
   backdrop-filter: blur(42px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.package:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 174, 0.1);
+}
+
 .top {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
 }
+
 .package-name {
   color: #fff;
 
   font-size: 30px;
   font-weight: 600;
 }
+
 .package-describtion {
   color: #8d9fb8;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
 }
+
 .bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .price {
   color: #fff;
-  font-size: 58px;
+  font-size: clamp(32px, 3vw, 58px);
   font-weight: 700;
 }
+
 .annually {
   color: #8d9fb8;
   font-size: 1.4rem;
   font-weight: 700;
 }
+
 .purchase,
 .special-purchase {
   display: flex;
@@ -76,22 +97,98 @@
   align-items: center;
   width: 167px;
   height: 44px;
+  height: clamp(28.5px, 5vh, 44px);
   border-radius: 8px;
   font-size: 1.4rem;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 1.4;
   color: #fff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .purchase {
   border: 1px solid rgba(255, 255, 255, 0.1);
-
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.08) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+.purchase:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
 .special-purchase {
   background: linear-gradient(180deg, #00ffae 0%, #00a772 100%);
+}
+
+.special-purchase:hover {
+  filter: brightness(1.1);
+}
+
+.button {
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #00ffae 0%, #00c088 100%);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 3.1rem 0 10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    gap: 3rem;
+    padding: 2.6rem 0 8.8rem;
+    max-width: 92%;
+  }
+
+  .packages {
+    grid-template-columns: 1fr;
+    gap: 1.55rem;
+  }
+
+  .package {
+    min-height: 15.8rem;
+    padding: 1.2rem;
+    border-radius: 9.7px;
+  }
+  .top {
+    gap: 0.72rem;
+  }
+  .package-name {
+    font-size: 19.4px;
+  }
+  .package-describtion {
+    font-size: 14.2px;
+  }
+  .price {
+    font-size: 37.5px;
+  }
+  .annually {
+    font-size: 0.9rem;
+  }
+  .purchase,
+  .special-purchase {
+    height: 28.5px;
+    font-size: 0.9rem;
+    line-height: 20px;
+    width: 108px;
+    border-radius: 5px;
+    border: 0.647px solid rgba(255, 255, 255, 0.1);
+  }
 }

@@ -1,3 +1,6 @@
+.page {
+  position: relative;
+}
 .green-ball-2 {
   width: 458px;
   height: 205px;
@@ -16,4 +19,22 @@
   position: absolute;
   top: 9px;
   left: -251px;
+}
+@media (max-width: 600px) {
+  .green-ball-2 {
+    width: 388px;
+    height: 174px;
+    filter: blur(127);
+    top: 138.4px;
+    right: -324.2px;
+  }
+
+  .green-ball {
+    width: 458px;
+    height: 205px;
+    filter: blur(150px);
+    position: absolute;
+    top: 9px;
+    left: -251px;
+  }
 }

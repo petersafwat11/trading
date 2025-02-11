@@ -5,6 +5,7 @@
   display: flex;
   padding: 14.1rem 0 0 9.6rem;
   background: url("/svg/landing-page/financial-background.svg");
+  gap: 3rem;
 }
 .first {
   display: flex;

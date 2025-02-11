@@ -11,6 +11,7 @@
   color: #fff;
   font-size: 4rem;
   text-transform: uppercase;
+  animation: fadeInDown 0.8s ease-out;
 }
 .title-span-1 {
   font-weight: 800;
@@ -24,6 +25,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out;
 }
 .package-1,
 .package-2,
@@ -33,9 +37,19 @@
   padding: 4rem;
   flex-direction: column;
   justify-content: space-between;
-  /* gap: 3.2rem; */
   border-radius: 15px;
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.package-1:hover,
+.package-2:hover,
+.package-3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 255, 174, 0.15);
+}
+
 .package-1 {
   background: linear-gradient(
     195deg,
@@ -45,19 +59,19 @@
   );
   backdrop-filter: blur(20px);
   width: 35.1rem;
+  animation: slideInLeft 0.8s ease-out;
 }
 .package-2 {
   border: 1px solid #00ffae;
-
   background: linear-gradient(
     180deg,
     rgba(0, 255, 174, 0.05) 0%,
     rgba(0, 255, 174, 0.05) 50%,
     rgba(0, 255, 174, 0.05) 100%
   );
-
   backdrop-filter: blur(42px);
   width: 36.3rem;
+  animation: slideInUp 0.8s ease-out;
 }
 .package-3 {
   background: linear-gradient(
@@ -66,9 +80,9 @@
     rgba(0, 255, 174, 0.05) 50%,
     rgba(0, 255, 174, 0.05) 100%
   );
-
   backdrop-filter: blur(20px);
   width: 35.1rem;
+  animation: slideInRight 0.8s ease-out;
 }
 .top {
   display: flex;
@@ -84,22 +98,19 @@
 .package-name {
   color: #fff;
   font-size: 2rem;
-  font-style: normal;
   font-weight: 600;
-  line-height: 28px; /* 140% */
-  /* margin-bottom: 0.4rem; */
+  line-height: 28px;
 }
 .package-describtion {
   color: #8d9fb8;
   font-size: 22px;
   font-weight: 400;
-  /* margin-bottom: 3.2rem; */
 }
 .price {
   color: #fff;
   font-size: 5.8rem;
   font-weight: 700;
-  /* margin-bottom: 1.7rem; */
+  animation: pulse 2s infinite;
 }
 .annually {
   color: #8d9fb8;
@@ -121,7 +132,142 @@
   );
   color: #fff;
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.get-started:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    gap: 3.52rem;
+    width: min(95%, 100rem);
+    padding: 5rem 0 2.6rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .title-span-2 {
+    margin-left: 0.7rem;
+  }
+  .package-1,
+  .package-2,
+  .package-3 {
+    height: auto;
+    min-height: 38rem;
+    padding: 3.9rem;
+    border-radius: 14.7px;
+    width: 100%;
+  }
+  .top {
+    gap: 0.39rem;
+  }
+  .bottom {
+    gap: 1.68rem;
+  }
+  .package-name {
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+  }
+  .package-describtion {
+    font-size: 21.5px;
+  }
+  .price {
+    font-size: 5.67rem;
+  }
+  .annually {
+    font-size: 1.37rem;
+  }
+  .get-started {
+    height: 4.34rem;
+    border-radius: 7.8px;
+    font-size: 1.37rem;
+    line-height: 1.95rem;
+  }
+}
+
+.button {
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, #00ffae 0%, #00c088 100%);
 }

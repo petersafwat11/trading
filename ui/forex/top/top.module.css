@@ -42,4 +42,37 @@
   background: #00ffae;
   cursor: pointer;
   border: none;
+  transition: all 0.3s ease;
+}
+
+.get-started:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 174, 0.2);
+  background: #00ffae;
+}
+@media (max-width: 1300px) {
+  .container {
+    padding: 8.2rem 0 1.37rem;
+    margin-top: 0;
+    background: url("/svg/candle-mobile.svg") top center;
+    gap: 2rem;
+  }
+
+  .top {
+    width: auto;
+    max-width: 95%;
+    gap: 0.6rem;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .get-started {
+    font-size: 12px;
+    width: 131px;
+    height: 34.293px;
+    border-radius: 6.2px;
+  }
 }

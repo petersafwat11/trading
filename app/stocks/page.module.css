@@ -1,3 +1,6 @@
+.page {
+  position: relative;
+}
 .green-ball-2 {
   width: 458px;
   height: 205px;

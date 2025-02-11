@@ -6,7 +6,7 @@ import SoloPackage from "@/ui/forex/soloPackage/SoloPackage";
 import Plans from "@/ui/forex/plans/Plans";
 const page = () => {
   return (
-    <div className={classes["container"]}>
+    <div className={classes["page"]}>
       <span className={classes["green-ball"]}></span>
       <span className={classes["green-ball-2"]}></span>
       <Top />
